@@ -1,0 +1,19 @@
+.topToolBar {
+  text-align: center;
+  font-size: 18px;
+  height: 21px;
+  line-height: 21px;
+  padding: 8px 15px; }
+  .topToolBar span {
+    display: inline-block;
+    width: 23px;
+    height: 21px; }
+    .topToolBar span img {
+      width: 100%;
+      height: 100%; }
+  .topToolBar .HomeButton {
+    float: left; }
+  .topToolBar .TopButton {
+    float: right; }
+
+/*# sourceMappingURL=topToolBar.css.map */

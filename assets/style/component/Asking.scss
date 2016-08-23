@@ -1,0 +1,85 @@
+$lightBorderColor:#efefef;
+$textGrey:#333333;
+$lightTextGrey:#666666;
+$textblue:#27bba3;
+
+$browser-default-font-size: 100px !default;
+@function pxTorem($px) { //$px为需要转换的字号
+  @return $px/(2*$browser-default-font-size) * 1rem;
+}
+.askingBox{
+  img{
+    display: block;
+  }
+  padding-left:pxTorem(30px);
+  padding-right:pxTorem(30px);
+  .askingCard{
+    padding-top:pxTorem(42px);
+    padding-bottom:pxTorem(24px);
+    border-bottom:1px solid $lightBorderColor;
+    .askingContent{
+      font-size: pxTorem(28px);
+      color:$textGrey;
+      line-height: pxTorem(50px);
+    }
+    .answer{
+      margin: pxTorem(22px) 0;
+      div{
+        float:left;
+      }
+      div:first-of-type{
+        width: pxTorem(50px);
+        height: pxTorem(50px);
+        border-radius: 25px;
+        margin-right:pxTorem(14px);
+        img{
+          width:100%;
+          height:100%;
+          display: block;
+        }
+      }
+      div:nth-of-type(2){
+        color: $lightTextGrey;
+        font-size: pxTorem(22px);
+        line-height: pxTorem(60px);
+      }
+    }
+    .audioBox{
+      font-size: pxTorem(22px);
+      color:$textblue;
+      line-height: pxTorem(60px);
+      display: flex;
+      align-items: center;
+      padding: pxTorem(10px);
+      border:1px solid $lightBorderColor;
+      border-radius: 50px;
+      box-shadow: 0px 1px 3px $lightBorderColor;
+      img{
+        width: 100%;
+        height: 100%;
+        display: block;
+      }
+      div{
+        display:inline-block;
+        height: pxTorem(60px);
+        line-height: pxTorem(60px);
+      }
+      div:first-of-type{
+        width: pxTorem(60px);
+        border-radius:50%;
+      }
+      div:nth-of-type(2){
+        width: pxTorem(384px);
+        margin: 0 pxTorem(32px);
+      }
+    }
+    .questionInfo{
+      margin: pxTorem(26px) 0;
+      color: $lightTextGrey;
+      font-size: pxTorem(22px)
+    }
+  }
+}
+ul{
+  font-size: pxTorem(24px);
+}

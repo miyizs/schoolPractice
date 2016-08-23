@@ -1,0 +1,67 @@
+.singleCard {
+  margin: 10px auto;
+  width: 95%;
+  border: 1px solid #dcdddd;
+  border-bottom: 0; }
+  .singleCard .contentBox {
+    transition: all 1s linear;
+    overflow-y: hidden; }
+  .singleCard .contentBox.hide {
+    height: 91px !important; }
+  .singleCard .titleLine {
+    border-bottom: 1px solid #dedddd;
+    padding: 13px 13px 9px;
+    font-size: 14px;
+    color: #666666; }
+    .singleCard .titleLine .group {
+      margin-right: 8px; }
+    .singleCard .titleLine div:first-of-type {
+      float: left; }
+    .singleCard .titleLine div:nth-of-type(2) {
+      float: right;
+      font-size: 11px;
+      line-height: 15px; }
+      .singleCard .titleLine div:nth-of-type(2) .littleArrow {
+        display: inline-block;
+        border-top: 1px solid #666;
+        border-left: 1px solid #666;
+        width: 7px;
+        height: 7px;
+        transform: rotate(-135deg);
+        transform-origin: top left;
+        position: relative;
+        top: 7px;
+        transition: all 0.3s ease; }
+  .singleCard .contentLine {
+    border-bottom: 1px solid #dcdddd; }
+    .singleCard .contentLine .imgBox {
+      width: 66px;
+      height: 66px;
+      float: left;
+      overflow: hidden;
+      margin: 12px;
+      position: relative; }
+      .singleCard .contentLine .imgBox .iconBox {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        .singleCard .contentLine .imgBox .iconBox img {
+          width: 24px;
+          height: 24px; }
+    .singleCard .contentLine .schoolContent {
+      float: left;
+      padding: 25px 0; }
+      .singleCard .contentLine .schoolContent div:first-of-type {
+        font-size: 14px;
+        color: #333;
+        margin-bottom: 10px; }
+      .singleCard .contentLine .schoolContent div:nth-of-type(2) {
+        font-size: 10px;
+        color: #333; }
+
+/*# sourceMappingURL=singleCard.css.map */

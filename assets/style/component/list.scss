@@ -1,0 +1,21 @@
+.listBox{
+  width:50px;
+  overflow-x:hidden;
+  .listBoxIn{
+    width:1000px;
+  }
+  li{
+    width:50px;
+    height:100px;
+    float:left;
+    background-color:lightblue;
+  }
+}
+.example-leave{
+  opacity: 1;
+  transition: all .5s ease-in;
+}
+.example-leave.example-leave-active {
+  opacity: 0.01;
+  transform:translate(-100px,0)
+}

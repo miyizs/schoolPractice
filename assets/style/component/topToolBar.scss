@@ -1,0 +1,22 @@
+.topToolBar{
+  text-align:center;
+  font-size:18px;
+  height:21px;
+  line-height:21px;
+  padding:8px 15px;
+  span{
+    display:inline-block;
+    width:23px;
+    height:21px;
+    img{
+      width:100%;
+      height:100%;
+    }
+  }
+  .HomeButton{
+    float:left;
+  }
+  .TopButton{
+    float:right;
+  }
+}

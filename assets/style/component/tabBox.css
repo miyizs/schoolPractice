@@ -1,0 +1,24 @@
+.TabBox {
+  position: relative;
+  border-bottom: 2px solid #dcdddd; }
+  .TabBox .TabContent {
+    display: flex;
+    justify-content: space-around; }
+    .TabBox .TabContent span {
+      color: #666666;
+      font-size: 16px;
+      padding: 17px 0px; }
+  .TabBox #marker {
+    width: 34%;
+    height: 2px;
+    background-color: #27bba3;
+    margin-bottom: -2px;
+    transition: all .3s linear; }
+  .TabBox .firstActive {
+    margin-left: 0; }
+  .TabBox .secondActive {
+    margin-left: 33%; }
+  .TabBox .thirdActive {
+    margin-left: 66%; }
+
+/*# sourceMappingURL=tabBox.css.map */

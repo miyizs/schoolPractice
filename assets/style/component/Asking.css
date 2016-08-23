@@ -1,0 +1,63 @@
+.askingBox {
+  padding-left: 0.15rem;
+  padding-right: 0.15rem; }
+  .askingBox img {
+    display: block; }
+  .askingBox .askingCard {
+    padding-top: 0.21rem;
+    padding-bottom: 0.12rem;
+    border-bottom: 1px solid #efefef; }
+    .askingBox .askingCard .askingContent {
+      font-size: 0.14rem;
+      color: #333333;
+      line-height: 0.25rem; }
+    .askingBox .askingCard .answer {
+      margin: 0.11rem 0; }
+      .askingBox .askingCard .answer div {
+        float: left; }
+      .askingBox .askingCard .answer div:first-of-type {
+        width: 0.25rem;
+        height: 0.25rem;
+        border-radius: 25px;
+        margin-right: 0.07rem; }
+        .askingBox .askingCard .answer div:first-of-type img {
+          width: 100%;
+          height: 100%;
+          display: block; }
+      .askingBox .askingCard .answer div:nth-of-type(2) {
+        color: #666666;
+        font-size: 0.11rem;
+        line-height: 0.3rem; }
+    .askingBox .askingCard .audioBox {
+      font-size: 0.11rem;
+      color: #27bba3;
+      line-height: 0.3rem;
+      display: flex;
+      align-items: center;
+      padding: 0.05rem;
+      border: 1px solid #efefef;
+      border-radius: 50px;
+      box-shadow: 0px 1px 3px #efefef; }
+      .askingBox .askingCard .audioBox img {
+        width: 100%;
+        height: 100%;
+        display: block; }
+      .askingBox .askingCard .audioBox div {
+        display: inline-block;
+        height: 0.3rem;
+        line-height: 0.3rem; }
+      .askingBox .askingCard .audioBox div:first-of-type {
+        width: 0.3rem;
+        border-radius: 50%; }
+      .askingBox .askingCard .audioBox div:nth-of-type(2) {
+        width: 1.92rem;
+        margin: 0 0.16rem; }
+    .askingBox .askingCard .questionInfo {
+      margin: 0.13rem 0;
+      color: #666666;
+      font-size: 0.11rem; }
+
+ul {
+  font-size: 0.12rem; }
+
+/*# sourceMappingURL=Asking.css.map */
