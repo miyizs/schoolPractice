@@ -2,19 +2,8 @@ import React,{ Component } from 'react'
 import '../assets/style/component/tabBox.css'
 import SingleCard from '../Components/SingleCard'
 import Asking from '../Components/asking'
+import Live from '../Components/Live'
 class MainSection extends Component{
-    constructor() {
-        super()
-        this.state = {
-            classList:['firstActive','secondActive','thirdActive'],
-            nameList:['校园故事','校园直播','校园问答'],
-            currentActive:0
-        }
-    }
-    activeTab(i){
-        document.getElementById('marker').className = this.state.classList[i];
-        this.setState({currentActive:i});
-    }
     render(){
         var cards = this.props.school.map((x,i)=>{
           return (
@@ -27,10 +16,10 @@ class MainSection extends Component{
             )
         })
         var boxContent;
-        if(this.state.currentActive == 0){
+        if(this.props.activeIdx == 0){
           boxContent = cards;
-        }else if(this.state.currentActive ==1){
-            boxContent = <div>111</div>
+        }else if(this.props.activeIdx ==1){
+            boxContent = <Live liveItems={this.props.liveItems} seeDetail={this.props.seeDetail}/>
         }else{
           boxContent = askinglist;
         }
@@ -39,14 +28,19 @@ class MainSection extends Component{
             <div className="TabBox">
                 <div className="TabContent">
                     {
-                        this.state.nameList.map((x,i)=>{
-                            return(
-                                <span onTouchStart={this.activeTab.bind(this,i)} key={x}>{x}</span>
-                            )
+                        this.props.tabList.map((x,i)=>{
+                            if(x == 'firstActive'){
+                                return <span onTouchStart={this.props.activeTab.bind(this,i)} key={x}>校园故事</span>
+                            }else if( x == 'secondActive'){
+                                return <span onTouchStart={this.props.activeTab.bind(this,i)} key={x}>校园直播</span>
+                            }else{
+                                return <span onTouchStart={this.props.activeTab.bind(this,i)} key={x}>校园问答</span>
+                            }
+
                         })
                     }
                 </div>
-                <div id="marker"></div>
+                <div id="marker" ref="marker" className={this.props.tabList[this.props.activeIdx]}></div>
             </div>
             {boxContent}
           </div>

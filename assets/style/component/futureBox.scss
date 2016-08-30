@@ -1,0 +1,78 @@
+$browser-default-font-size: 100px !default;
+@function pxTorem($px) { //$px为需要转换的字号
+  @return $px/(2*$browser-default-font-size) * 1rem;
+}
+.playBox{
+  width:100%;
+  height: pxTorem(336px);
+  background:url('../../images/projectimg.png') no-repeat;
+  background-size:cover;
+  .playImg{
+    display:block;
+    margin: 0 auto;
+    width:pxTorem(112px);
+    height:pxTorem(112px);
+  }
+}
+.playBox > div{
+  padding-top:pxTorem(112px)
+}
+.futureBox{
+  width:100%;
+  height: pxTorem(336px);
+  background:url('../../images/projectimg.png') no-repeat;
+  background-size:cover;
+  color:rgba(255,255,255,0.9);
+  text-align: center;
+  display:-webkit-box;
+  display:-webkit-flex;
+  display:flex;
+  align-items: center;
+  div{
+    margin:0 auto;
+  }
+  h1{
+    width:100%;
+    font-size: pxTorem(32px);
+    margin-bottom: pxTorem(18px);
+  }
+  h2{
+    width:100%;
+    font-size: pxTorem(24px);
+  }
+}
+.futureInfo{
+  height:pxTorem(80px);
+  box-shadow: 0px 2px 2px #e7e7e7;
+  padding:pxTorem(0px) pxTorem(30px);
+  display:-webkit-flex;
+  display:-webkit-box;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: pxTorem(28px);
+  color:#666666;
+  .eyesee{
+    span{
+      padding-left:5px;
+    }
+  }
+  img{
+    width: pxTorem(35px);
+    height: pxTorem(25px);
+  }
+}
+.commentBox{
+  padding-top:pxTorem(130px);
+  img{
+    width:pxTorem(280px);
+    height:pxTorem(170px);
+    margin:0 auto pxTorem(10px);
+    display:block;
+  }
+  h2{
+    font-size: pxTorem(24px);
+    color:#cccccc;
+    text-align: center;
+  }
+}

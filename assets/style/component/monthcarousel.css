@@ -1,0 +1,103 @@
+.liveBox {
+  font-size: 0.12rem; }
+  .liveBox .monthBox {
+    color: #999999;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    overflow: hidden;
+    padding-top: 0.17rem;
+    padding-bottom: 0.12rem; }
+    .liveBox .monthBox h3 {
+      width: 50%;
+      margin: 0 auto;
+      text-align: center; }
+    .liveBox .monthBox .active {
+      color: #27bba3; }
+  .liveBox .liveOutside {
+    margin: 0 0.15rem;
+    overflow: hidden; }
+  .liveBox .liveCard {
+    color: rgba(255, 255, 255, 0.9);
+    text-align: center;
+    height: 1.69rem;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 0.14rem; }
+    .liveBox .liveCard .cover {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      width: 100%;
+      height: 1.69rem;
+      background-color: transparent; }
+    .liveBox .liveCard .grey {
+      background-color: rgba(0, 0, 0, 0.3); }
+    .liveBox .liveCard .liveInside {
+      width: 100%;
+      height: 1.69rem;
+      position: absolute;
+      z-index: 2;
+      top: 0;
+      left: 0; }
+      .liveBox .liveCard .liveInside h2 {
+        font-size: 0.12rem; }
+      .liveBox .liveCard .liveInside .projectStatus {
+        float: right;
+        margin-right: 0.1rem;
+        margin-top: 0.14rem;
+        font-size: 0.1rem;
+        color: #fff;
+        line-height: 0.18rem;
+        padding: 0px 0.09rem;
+        border: 1px solid #fff;
+        border-radius: 50px; }
+      .liveBox .liveCard .liveInside .playStatus {
+        width: 0.56rem;
+        height: 0.56rem;
+        overflow: hidden;
+        margin: 0.36rem auto 0.11rem; }
+        .liveBox .liveCard .liveInside .playStatus img {
+          width: 100%;
+          height: 100%; }
+      .liveBox .liveCard .liveInside .projectInfo {
+        width: 100%;
+        margin-top: 0.35rem;
+        font-size: 0.1rem; }
+        .liveBox .liveCard .liveInside .projectInfo .leftSpan {
+          float: left;
+          padding-left: 0.1rem; }
+        .liveBox .liveCard .liveInside .projectInfo .rightSpan {
+          float: right;
+          padding-right: 0.1rem;
+          vertical-align: middle; }
+          .liveBox .liveCard .liveInside .projectInfo .rightSpan .waiting {
+            width: 0.15rem;
+            height: 0.15rem; }
+          .liveBox .liveCard .liveInside .projectInfo .rightSpan img {
+            position: relative;
+            top: -1px;
+            width: 0.18rem;
+            height: 0.12rem;
+            vertical-align: middle;
+            display: inline-block;
+            margin-right: 5px; }
+  .liveBox .liveCard > img {
+    width: 100%;
+    height: 100%;
+    display: block; }
+  .liveBox .noContent .noItem {
+    width: 0.795rem;
+    height: 0.675rem;
+    overflow: hidden;
+    margin: 0.65rem auto 0.13rem; }
+    .liveBox .noContent .noItem img {
+      width: 100%;
+      height: auto; }
+  .liveBox .noContent h3 {
+    font-size: 0.12rem;
+    color: #aaaaaa;
+    text-align: center; }
+
+/*# sourceMappingURL=monthcarousel.css.map */

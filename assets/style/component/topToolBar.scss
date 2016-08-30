@@ -15,6 +15,14 @@
   }
   .HomeButton{
     float:left;
+    .goBackArrow{
+      display:inline-block;
+      border-left:2px solid #3cc2ad;
+      border-bottom:2px solid #3cc2ad;
+      width:15px;
+      height:15px;
+      transform: rotate(45deg);
+    }
   }
   .TopButton{
     float:right;

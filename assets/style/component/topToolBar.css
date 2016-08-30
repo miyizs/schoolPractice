@@ -13,6 +13,13 @@
       height: 100%; }
   .topToolBar .HomeButton {
     float: left; }
+    .topToolBar .HomeButton .goBackArrow {
+      display: inline-block;
+      border-left: 2px solid #3cc2ad;
+      border-bottom: 2px solid #3cc2ad;
+      width: 15px;
+      height: 15px;
+      transform: rotate(45deg); }
   .topToolBar .TopButton {
     float: right; }
 

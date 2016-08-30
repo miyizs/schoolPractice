@@ -41,6 +41,9 @@
   }
   .contentLine{
     border-bottom:1px solid #dcdddd;
+    display:flex;
+    display:-webkit-flex;
+    display:-webkit-box;
     .imgBox{
       width:66px;
       height:66px;
@@ -63,8 +66,12 @@
         }
       }
     }
+    .imgBox>img{
+      width:100%;
+      height:auto;
+      display:block;
+    }
     .schoolContent{
-      float:left;
       padding:25px 0;
       div:first-of-type{
         font-size:14px;

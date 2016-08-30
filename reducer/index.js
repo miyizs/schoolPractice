@@ -1,7 +1,7 @@
 import { combineReducers } from 'redux';
 import { routerReducer as routing } from 'react-router-redux'
 
-const initialItemsState  = {
+const initialSchoolItems  = {
     school:[
       {
         schoolProjectName:'校园概况',
@@ -68,13 +68,102 @@ const initialItemsState  = {
 
 }
 
-function schoolItemReducer(state = initialItemsState, action) {
+const initialLiveItems = [
+    {
+        status:'crowd',
+        statusName:'众筹中',
+        title:'[鱼说LIVE]中国传媒大学,体育馆',
+        anchor:'um叮铃',
+        residue:12,
+        price:1,
+        people:0,
+        time:0
+    },
+    {
+        status:'progressing',
+        statusName:'进行中',
+        title:'[鱼说LIVE]中国传媒大学,创业区',
+        anchor:'巴菲猫',
+        residue:12,
+        price:1,
+        people:3242,
+        time:0
+    },
+    {
+        status:'notstart',
+        statusName:'未开始',
+        title:'[鱼说LIVE]中国传媒大学,创业区',
+        anchor:'巴菲猫',
+        residue:12,
+        price:1,
+        people:3242,
+        time:'2016.07.16 07:00'
+    },
+    {
+        status:'over',
+        statusName:'已结束',
+        title:'[鱼说LIVE]中国传媒大学,创业区',
+        anchor:'巴菲猫',
+        residue:12,
+        price:1,
+        people:3242,
+        time:'2016.07.16 07:00'
+    }
+]
+
+const initialTab ={
+    tabList:['firstActive','secondActive','thirdActive'],
+    currentActive:0
+}
+
+const initialPageInfo = {
+    status:'notStart',
+    title:'鱼说中国传媒大学创业区',
+    people: 3421
+}
+
+function pageReducer(state=initialPageInfo, action){
+    if(action.type == 'CHOOSE_PROJECT'){
+        console.log(
+            Object.assign({},state,{status:action.status,title:action.title,people:action.people})
+        )
+        return Object.assign({},state,{status:action.status,title:action.title,people:action.people})
+    }
     return state
 }
 
+function tabReducer(state = initialTab, action){
+    if(action.type == 'CHOOSE_TAB'){
+       if(action.idx == 0){
+           return Object.assign({},state,{currentActive:0})
+       }else if(action.idx ==1){
+           return Object.assign({},state,{currentActive:1})
+       }else{
+           return Object.assign({},state,{currentActive:2})
+       }
+    }
+    return state
+}
+
+function schoolItemReducer(state = initialSchoolItems, action) {
+    return state
+}
+
+function monthReducer(state = initialLiveItems, action){
+    if(action.type == 'CHOOSE_MONTH'){
+        if(action.idx !== 0 ){
+            return []
+        }
+        return Object.assign([],state,initialLiveItems)
+    }
+    return state
+}
 
 var reducers = combineReducers({
+    tabReducer,
     schoolItemReducer,
+    monthReducer,
+    pageReducer,
     routing
 });
 

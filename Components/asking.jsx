@@ -13,8 +13,6 @@ class Asking extends Component{
         }
     }
     getTime(idx,e){
-        console.log(e.currentTarget.duration)
-        console.log(idx)
         var newTimeList = this.state.timeList
         newTimeList[idx] = parseInt(e.currentTarget.duration)
         this.setState({timeList:newTimeList})

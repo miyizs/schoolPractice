@@ -33,7 +33,10 @@
         top: 7px;
         transition: all 0.3s ease; }
   .singleCard .contentLine {
-    border-bottom: 1px solid #dcdddd; }
+    border-bottom: 1px solid #dcdddd;
+    display: flex;
+    display: -webkit-flex;
+    display: -webkit-box; }
     .singleCard .contentLine .imgBox {
       width: 66px;
       height: 66px;
@@ -53,8 +56,11 @@
         .singleCard .contentLine .imgBox .iconBox img {
           width: 24px;
           height: 24px; }
+    .singleCard .contentLine .imgBox > img {
+      width: 100%;
+      height: auto;
+      display: block; }
     .singleCard .contentLine .schoolContent {
-      float: left;
       padding: 25px 0; }
       .singleCard .contentLine .schoolContent div:first-of-type {
         font-size: 14px;

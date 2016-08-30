@@ -1,10 +1,17 @@
-import React,{ Component } from 'react'
+import React,{ Component,PropTypes} from 'react'
+import connect from 'react-redux'
+import ShareToolBar from '../Components/ShareToolBar'
+import PlayBox from '../Components/playBox'
+import FutureBox from '../Components/FutureBox'
 class About extends Component{
     render(){
-        var aboutStyle = {
-          fontSize:14
-        }
-        return <h1 style={aboutStyle}>About</h1>
+        return (
+            <div>
+                <ShareToolBar />
+                <PlayBox />
+            </div>
+        )
     }
 }
+
 export default About

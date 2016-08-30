@@ -3,21 +3,36 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
-    <style>
-        div{
-            width:100px;
-            border:2px solid black;
-            padding:10px;
-            box-sizing:content-box;
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <link rel="stylesheet" href="test.css"/>
 </head>
 <body>
-    <div>
-        <audio src="http://developer.mozilla.org/@api/deki/files/2926/=AudioTest_(1).ogg">
-            Your browser does not support the <code>audio</code> element.
-        </audio>
+    <div class="singleItem">
+        <div class="itemMain">
+            <div class="leftPart">
+                <div>这一口,我想跟你一起吃</div>
+                <div>泡菜海鲜饼,近几年,感觉时间越过越快。拍完日食记泡菜饼这一集以后,招呼大家一起吃,完事的同事也一起来了</div>
+                <div class="leftInfo">美食/作者:日食记</div>
+            </div>
+            <div class="rightPart">
+                <div class="imgBox">
+                    <img src="testimages/1.jpg"/>
+                </div>
+                <div class="rightInfo">
+                    <span class="like">222</span>
+                    <span class="comment">14</span>
+                </div>
+            </div>
+        </div>
     </div>
+    <input type="checkbox" onClick="toggleScale(this)"/>
+    <script>
+        function toggleScale(obj){
+            console.log(obj.checked)
+        }
+    </script>
 </body>
 </html>

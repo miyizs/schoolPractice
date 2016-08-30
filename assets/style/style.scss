@@ -5,6 +5,8 @@
 body{
   max-width: 640px;
   margin:0 auto;
+  min-height: 1500px;
+  font-size:16px;
 }
 /*for >641px with screen*/
 @media only screen and (min-width: 640px){
@@ -57,29 +59,35 @@ body{
   margin: 0 auto;
   color: #333;
 }
-.slick-slider{
+.container .slick-slider{
   margin-bottom: 0px !important;
 }
-.slick-slide{
+.container .slick-slide{
   height:200px;
 }
-.slick-slide img{
+.container .slick-slide img{
   width:100%;
   height:100%;
 }
-.slick-dots{
+.container .slick-dots{
   bottom:0;
   width:40px;
   right:10px;
 }
-.slick-dots li button:before{
+.container .slick-dots li button:before{
   opacity:1;
   color:#fff;
 }
-.slick-dots li.slick-active button:before {
+.container .slick-dots li.slick-active button:before {
   color: #fff;
   opacity: 0.75;
 }
-.slick-dots li{
+.container .slick-dots li{
   width:10px;
+}
+.container .slick-arrow.slick-next{
+  display:none !important;
+}
+.container .slick-arrow.slick-prev{
+  display:none !important;
 }
